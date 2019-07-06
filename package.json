@@ -19,6 +19,7 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint --fix src/**/* __test__/**/*",
+    "dtslint": "dtslint types",
     "test": "jest --detectOpenHandles"
   },
   "dependencies": {
@@ -27,8 +28,11 @@
     "ldap-filter": "0.3.3"
   },
   "devDependencies": {
+    "dtslint": "^0.8.0",
     "eslint": "^5.9.0",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
   },
   "jest": {
     "testURL": "http://localhost/",
@@ -42,5 +46,6 @@
   },
   "engines": {
     "node": ">=8.0"
-  }
+  },
+  "types": "./types/index.d.ts"
 }
