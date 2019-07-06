@@ -1,6 +1,8 @@
 language: node_js
 node_js:
-    - "9"
-script: npm run test -s
+    - "10"
+script:
+    - npm run dtslint
+    - npm run test -s
 before_script:
     - npm install
